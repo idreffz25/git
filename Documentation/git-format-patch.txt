@@ -345,7 +345,9 @@ you can use `--suffix=-patch` to get `0001-description-of-my-change-patch`.
 	Record the base tree information to identify the state the
 	patch series applies to.  See the BASE TREE INFORMATION section
 	below for details. If <commit> is "auto", a base commit is
-	automatically chosen. The `--no-base` option overrides a
+	automatically chosen. If <commit> is "if-able", a base commit is
+	included if available, however format-patch won't die if it cannot
+	find a valid base commit. The `--no-base` option overrides a
 	`format.useAutoBase` configuration.
 
 --root::

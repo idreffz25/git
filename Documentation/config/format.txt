@@ -96,7 +96,10 @@ format.outputDirectory::
 
 format.useAutoBase::
 	A boolean value which lets you enable the `--base=auto` option of
-	format-patch by default.
+	format-patch by default. Can also be set to "whenAble" to set
+	`--base=if-able`. This causes format-patch to include the base
+	commit information if it can be determined, but skip it otherwise
+	without dying.
 
 format.notes::
 	Provides the default value for the `--notes` option to
